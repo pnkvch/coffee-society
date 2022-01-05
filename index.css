@@ -19,13 +19,29 @@ body {
 .login-page-container {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: 100%;
   align-items: center;
   justify-content: center;
 }
 
+.login-page-container h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
 .login-page-image {
   height: 100vh;;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 10px;
 }
 
 .form {
@@ -41,6 +57,7 @@ body {
 
 .input-container label {
   font-weight: bold;
+  font-size: 14px;
 }
 
 input {
