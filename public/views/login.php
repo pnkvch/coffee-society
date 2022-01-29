@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./page.css" rel="stylesheet" />
+  <link href="public/css/login.css" rel="stylesheet" />
   <title>Tanity</title>
 </head>
 <body>
-  <aside class="sidebar">
-
-  </aside>
+  <img class="login-page-image" src="public/images/login-aside.jpg" />
   <section class="login-page-container">
     <header class="header">
-      <img class="logo" src="./images/logo.svg" />
+      <img class="logo" src="public/images/logo.svg" />
       <h2>Exceptional coffee community!</h2>
     </header>
     <div class="form-container">

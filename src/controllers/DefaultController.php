@@ -6,11 +6,16 @@ class DefaultController extends AppController {
 
     public function index()
     {
+        header('Location: /login');
+    }
+
+    public function login()
+    {
         $this->render('login');
     }
 
-    public function projects()
+    public function feed()
     {
-        $this->render('projects');
+        $this->render('feed');
     }
 }

@@ -1,0 +1,32 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 310px;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.logo-sidebar {
+  width: 112px;
+  height: 40px;
+}
+
+.upper-sidebar,
+.lower-sidebar,
+.links {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.links {
+  margin-top: 70px;
+  height: 140px;
+  justify-content: space-between;
+}
+
+.lower-sidebar {
+  height: 130px;
+  justify-content: space-evenly;
+}

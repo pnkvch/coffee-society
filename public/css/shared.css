@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --main-bg-color: #ffedd8;
+  --main-text-color: #a47148;
+}
+
+body {
+  display: flex;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
