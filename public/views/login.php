@@ -24,7 +24,7 @@
           <label>Password</label>
           <input type="password" />
         </div>
-        <button class="submit-btn">Log In</button>
+        <button class="button">Log In</button>
       </form>
     </div>
   </section>

@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="lower-sidebar">
-      <button>Publish a post</button>
+      <button class="button">Publish a post</button>
       <a>My Blog</a>
       <a>Settings</a>
     </div>

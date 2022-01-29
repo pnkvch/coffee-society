@@ -15,3 +15,14 @@ body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
 }
+
+.button {
+  width: 150px;
+  border: 2px solid var(--main-text-color);
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  color: var(--main-text-color);
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
