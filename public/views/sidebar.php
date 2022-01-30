@@ -1,4 +1,5 @@
-<aside class="sidebar">
+<div>
+  <aside class="sidebar">
     <div class="upper-sidebar">
       <img class="logo-sidebar" src="public/images/logo.svg" />
       <div class="links">
@@ -13,4 +14,5 @@
       <a>My Blog</a>
       <a>Settings</a>
     </div>
-</aside>
+  </aside>
+</div>

@@ -9,21 +9,208 @@
   <title>Tanity</title>
 </head>
 <body>
-<?php $this->render('sidebar');?>
+  <div class="wrapper">
+  <?php $this->render('sidebar');?>
   <section class="feed-page-container">
-    <div class="cards-container">
-      <div class="card">
-        <div class="upper-section">
-          <h5>Lorem ipsum</h5>
-          <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+    <div class="cards-wrapper">
+    <div class="cards">
+      <div class="cards-container">
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
         </div>
-        <div class="lower-section">
-          <span>609</span>
-          <span>120</span>
-          <span>SHARE</span>
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
         </div>
       </div>
     </div>
+    <div class="cards">
+      <div class="cards-container">
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upper-section">
+            <h5>Lorem ipsum</h5>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
+          </div>
+          <div class="lower-section">
+            <span>609</span>
+            <span>120</span>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
   </section>
+  </div>
   </body>
 </html>

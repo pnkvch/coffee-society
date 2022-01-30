@@ -5,6 +5,8 @@
   width: 310px;
   padding: 50px;
   justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .logo-sidebar {
@@ -27,6 +29,6 @@
 }
 
 .lower-sidebar {
-  height: 130px;
-  justify-content: space-evenly;
+  height: 120px;
+  justify-content: space-between;
 }

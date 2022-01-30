@@ -6,22 +6,31 @@
 }
 
 :root {
-  --main-bg-color: #ffedd8;
-  --main-text-color: #a47148;
+  --primary-bg-color: #ffedd8;
+  --primary-text-color: #a47148;
+  --secondary-text-color: #fff;
+  --primary-black: 0, 0, 0;
+  --alpha: 0.5;
 }
 
 body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.wrapper {
   display: flex;
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
 }
 
 .button {
   width: 150px;
-  border: 2px solid var(--main-text-color);
-  background-color: var(--main-bg-color);
+  border: 2px solid var(--primary-text-color);
+  background-color: var(--primary-bg-color);
   border-radius: 20px;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
