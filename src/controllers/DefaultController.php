@@ -18,4 +18,9 @@ class DefaultController extends AppController {
     {
         $this->render('feed');
     }
+
+    public function recipies()
+    {
+        $this->render('recipies');
+    }
 }
