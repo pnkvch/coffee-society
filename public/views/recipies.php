@@ -12,7 +12,7 @@
 <body>
   <div class="wrapper">
   <?php $this->render('sidebar');?>
-  <section class="feed-page-container">
+  <section class="page-container">
     <div class="cards-wrapper">
       <div class="card">
         <div class="upper-section">

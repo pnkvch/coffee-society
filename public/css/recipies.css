@@ -1,60 +1,6 @@
 @import './shared.css';
 
-.feed-page-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  overflow: auto;
-  padding: 50px 50px 0 0;
-  height: 100vh;
-}
-
-.cards {
-  display: flex;
-  height: 90vh;
-  margin-bottom: 10px;
-}
-
-.cards-container {
-  width: 25%;
-  height: 100%;
-  margin-right: 10px;
-  overflow: hidden;
-}
-
-.cards-container:last-child {
-  margin: 0;
-}
-
 .card {
-  height: 350px;
   width: 530px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 30px;
-  background-image: linear-gradient(rgb(var(--primary-black), var(--alpha)), rgba(var(--primary-black), var(--alpha))), url(../images/coffee-image.png);
-  background-size: cover;
-  background-position: center;
-  color: var(--secondary-text-color);
-  transition: 0.2s linear;
 }
 
-.card h5 {
-  font-size: 18px;
-}
-
-.card span {
-  font-size: 14px;
-}
-
-.card {
-  margin-bottom: 10px;
-}
-
-.cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}

@@ -25,6 +25,44 @@ body {
   display: flex;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+  padding: 50px 50px 0 0;
+  height: 100vh;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  height: 350px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 30px;
+  background-image: linear-gradient(rgb(var(--primary-black), var(--alpha)), rgba(var(--primary-black), var(--alpha))), url(../images/coffee-image.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--secondary-text-color);
+  transition: 0.2s linear;
+}
+
+.card h5 {
+  font-size: 18px;
+}
+
+.card span {
+  font-size: 14px;
+}
+
 .button {
   width: 150px;
   border: 2px solid var(--primary-text-color);
