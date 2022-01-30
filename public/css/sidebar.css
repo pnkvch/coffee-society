@@ -33,6 +33,20 @@
   color: inherit;
   text-decoration: none;
   width: fit-content;
+  transition: 0.2s linear;
+}
+
+.sidebar a::after {
+  content: '';
+  display: block;
+  width: 0;
+  background: var(--primary-text-color);
+  height: 2px;
+  transition: width .3s ease-in-out;
+}
+
+.sidebar a:hover::after {
+  width: 100%;
 }
 
 .lower-sidebar {
@@ -40,6 +54,11 @@
   justify-content: space-between;
 }
 
-.active {
-  border-bottom: 2px solid;
+.sidebar a.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  background: var(--primary-text-color);
+  height: 2px;
+  transition: width .3s ease-in-out;
 }

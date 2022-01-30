@@ -3,7 +3,7 @@
     <div class="upper-sidebar">
       <img class="logo-sidebar" src="public/images/logo.svg" />
       <div class="links">
-        <a href="/feed" class="active">Feed</a>
+        <a href="/feed">Feed</a>
         <a href="/recipies">Coffee Recipies</a>
         <a href="/explore">Explore</a>
         <a href="/people">People</a>
