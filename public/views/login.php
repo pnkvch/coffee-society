@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?php $this->render('head');?>
   <link href="public/css/login.css" rel="stylesheet" />
-  <title>Tanity</title>
 </head>
 <body>
   <img class="login-page-image" src="public/images/login-aside.jpg" />
@@ -15,18 +12,22 @@
       <h2>Exceptional coffee community!</h2>
     </header>
     <div class="form-container">
-      <form class="form">
+      <form class="form" action="/login" method="POST">
         <div class="input-container">
           <label>Email</label>
-          <input type="email" />
+          <input name="email" type="email" placeholder="Enter email"/>
         </div>
         <div class="input-container">
           <label>Password</label>
-          <input type="password" />
+          <input name="password" type="password" placeholder="Enter password"/>
         </div>
         <button class="button">Log In</button>
       </form>
     </div>
+    <?php if ($messages): ?>
+        <span class="error-message"><?= $messages[0];?></span>
+    <?php endif; ?>
+    <span class="register-link">Don’t have an account? <a href="/register">Sign Up</a></span>
   </section>
   </body>
 </html>

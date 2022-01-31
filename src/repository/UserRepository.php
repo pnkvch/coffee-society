@@ -20,11 +20,11 @@ class UserRepository extends Repository
         }
 
         return new User(
+          $user['id'],
           $user['name'],
           $user['surname'],
           $user['email'],
           $user['password'],
-          $user['id']
         );
     }
 
@@ -41,28 +41,28 @@ class UserRepository extends Repository
 
         foreach ($users as $user) {
             $result[] = new User (
+                $user['id'],
                 $user['name'],
                 $user['surname'],
                 $user['email'],
                 $user['password'],
-                $user['id']
             );
         }
 
         return $result;
     }
 
-    public function addUser(string $email, string $plain_password, string $name, string $surname): void {
+    public function addUser(string $name, string $surname, string $email, string $password): void {
         $date = new DateTime();
         $stmt = $this->database->connect()->prepare('
             INSERT INTO public.users (name, surname, email, password, created_at)
             VALUES (?, ?, ?, ?, ?)
         ');
         $stmt->execute([
-            $email,
-            password_hash($plain_password, PASSWORD_DEFAULT),
             $name,
             $surname,
+            $email,
+            password_hash($password, PASSWORD_DEFAULT),
             $date->format('Y-m-d')
         ]);
       }

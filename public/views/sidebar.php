@@ -12,6 +12,7 @@
     <div class="lower-sidebar">
       <button class="button">Publish a post</button>
       <a href="/blog">My Blog</a>
+      <a href="/logout">Log Out</a>
     </div>
   </aside>
 </div>

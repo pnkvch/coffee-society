@@ -32,4 +32,9 @@ class DefaultController extends AppController {
     {
         $this->render('people');
     }
+
+    public function explore()
+    {
+        $this->render('explore');
+    }
 }

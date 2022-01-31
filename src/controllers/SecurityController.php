@@ -26,7 +26,7 @@ class SecurityController extends AppController {
             return $this->render('login', ['messages' => ["Email or password is incorrect"]]);
         }
 
-        if (password_verify($user->getPassword(), password_hash($password, PASSWORD_DEFAULT))) {
+        if (!password_verify($password, $user->getPassword())) {
             return $this->render('login', ['messages' => ["Email or password is incorrect"]]);
         }
 
@@ -52,10 +52,10 @@ class SecurityController extends AppController {
         $user = $userRepository->getUser($email);
 
         if ($user) {
-            return $this->render('login', ['messages' => ["This email is already used"]]);
+            return $this->render('register', ['messages' => ["This email is already used"]]);
         }
 
-        $userRepository->addUser($email, $password, $name, $surname);
+        $userRepository->addUser($name, $surname, $email, $password);
         $user = $userRepository->getUser($email);
 
         setcookie('userId', $user->getId(), time() + (86400 * 30), "/");
