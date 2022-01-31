@@ -6,7 +6,7 @@ class DefaultController extends AppController {
 
     public function index()
     {
-        if (isset($_SESSION['user_id'])) {
+        if (isset($_SESSION['userId'])) {
             header('Location: /feed');
         } else {
             header('Location: /login');

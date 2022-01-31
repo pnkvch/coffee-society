@@ -1,4 +1,7 @@
 <div>
+  <?php if (!isset($_COOKIE['userId'])) {
+    header('Location: /login');
+  }?>
   <aside class="sidebar">
     <div class="upper-sidebar">
       <img class="logo-sidebar" src="public/images/logo.svg" />

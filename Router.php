@@ -7,12 +7,12 @@ class Router {
 
   public static $routes;
 
-  public static function get($url, $view) {
-    self::$routes[$url] = $view;
+  public static function get($url, $controller) {
+    self::$routes[$url] = $controller;
   }
 
-  public static function post($url, $view) {
-    self::$routes[$url] = $view;
+  public static function post($url, $controller) {
+    self::$routes[$url] = $controller;
   }
 
   public static function run($url) {
