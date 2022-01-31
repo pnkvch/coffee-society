@@ -9,5 +9,8 @@ Router::get('', 'DefaultController');
 Router::get('login', 'DefaultController');
 Router::get('feed', 'DefaultController');
 Router::get('recipies', 'DefaultController');
+Router::get('people', 'DefaultController');
+Router::post('register', 'SecurityController');
+Router::post('login', 'SecurityController');
 
 Router::run($path);

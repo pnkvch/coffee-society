@@ -6,7 +6,11 @@ class DefaultController extends AppController {
 
     public function index()
     {
-        header('Location: /login');
+        if (isset($_SESSION['user_id'])) {
+            header('Location: /feed');
+        } else {
+            header('Location: /login');
+        }
     }
 
     public function login()
@@ -22,5 +26,10 @@ class DefaultController extends AppController {
     public function recipies()
     {
         $this->render('recipies');
+    }
+
+    public function people()
+    {
+        $this->render('people');
     }
 }
