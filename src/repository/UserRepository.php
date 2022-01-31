@@ -31,7 +31,7 @@ class UserRepository extends Repository
     public function getAllUsers(): array {
         $result = [];
         $stmt = $this->database->connect()->prepare('
-            SELECT id, name, surname, email, password id FROM public.users
+            SELECT id, name, surname, email, password FROM public.users
         ');
 
         $stmt->execute();

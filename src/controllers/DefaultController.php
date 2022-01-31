@@ -28,11 +28,6 @@ class DefaultController extends AppController {
         $this->render('recipies');
     }
 
-    public function people()
-    {
-        $this->render('people');
-    }
-
     public function explore()
     {
         $this->render('explore');

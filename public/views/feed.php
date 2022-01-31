@@ -3,6 +3,7 @@
 <head>
   <?php $this->render('head');?>
   <link href="public/css/feed.css" rel="stylesheet" />
+  <script type="text/javascript" src="public/js/feed.js" async></script>
 </head>
 <body>
   <div class="wrapper">
