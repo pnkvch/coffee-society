@@ -15,6 +15,10 @@
 
 .social-interaction * {
   margin-right: 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-text-color);
 }
 
 .counters {
