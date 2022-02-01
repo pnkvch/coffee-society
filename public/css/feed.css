@@ -3,3 +3,21 @@
 .card {
   width: 250px;
 }
+
+.social-interaction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-interaction img {
+  height: 13px;
+}
+
+.social-interaction * {
+  margin-right: 5px;
+}
+
+.counters {
+  display: flex;
+  align-items: center;
+}

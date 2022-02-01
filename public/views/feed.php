@@ -15,9 +15,13 @@
           <h5>Lorem ipsum</h5>
           <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, eius.</span>
         </div>
-        <div class="lower-section">
-          <span>609</span>
-          <span>120</span>
+        <div class="social-interaction">
+          <div class="counters">
+            <img src="public/images/heart.svg" />
+            <span>609</span>
+            <img src="public/images/comment.svg" />
+            <span>120</span>
+          </div>
           <span>SHARE</span>
         </div>
       </div>

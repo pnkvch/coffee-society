@@ -18,7 +18,7 @@
         <div class="card">
           <div class="info-section">
             <h5><?= $user->getName(); ?> <?= $user->getSurname(); ?></h5>
-            <span>Co-founder & CTO</span>
+            <span>Author</span>
             <div class="socials">
               <img src="public/images/instagram.svg" />
               <img src="public/images/twitter.svg" />
