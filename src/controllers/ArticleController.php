@@ -11,6 +11,11 @@ class ArticleController extends AppController {
       $this->articleRepository = new ArticleRepository();
   }
 
+  public function feed() {
+    $articles = $this->articleRepository->getArticles();
+    $this->render('feed', ['articles' => $articles]);
+  }
+
   public function recipies() {
     $recipies = $this->articleRepository->getRecipies();
     $this->render('recipies', ['recipies' => $recipies]);

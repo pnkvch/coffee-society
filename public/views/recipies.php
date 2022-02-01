@@ -3,6 +3,7 @@
 <head>
   <?php $this->render('head');?>
   <link href="public/css/recipies.css" rel="stylesheet" />
+  <script type="text/javascript" src="public/js/coffeePhotos.js" async></script>
 </head>
 <body>
   <div class="wrapper">
@@ -10,7 +11,7 @@
   <section class="page-container">
     <div class="cards-wrapper">
       <?php foreach ($recipies as $recipie): ?>
-        <div class="card">
+        <div class="card" onclick='$recipie'>
           <div class="upper-section">
             <h5><?= $recipie->getTitle(); ?></h5>
           </div>
@@ -20,7 +21,7 @@
               <span>1h ago</span>
             </div>
             <div class="social-interaction">
-              <span>SHARE</span>
+              <a>SHARE</a>
               <img src="public/images/arrow.svg" />
             </div>
           </div>
