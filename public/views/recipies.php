@@ -21,7 +21,7 @@
               <span>1h ago</span>
             </div>
             <div class="social-interaction">
-              <a>SHARE</a>
+              <a href="/recipie/<?= $recipie->getId();?>">Read</a>
               <img src="public/images/arrow.svg" />
             </div>
           </div>

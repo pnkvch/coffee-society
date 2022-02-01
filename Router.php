@@ -18,7 +18,8 @@ class Router {
   }
 
   public static function run($url) {
-    $action = explode("/", $url)[0];
+    $params = explode("/", $url);
+    $action = $params[0];
     if (!array_key_exists($action, self::$routes)) {
       die("Wrong url!");
     }
@@ -27,6 +28,11 @@ class Router {
     $object = new $controller;
     $action = $action ?: 'index';
 
-    $object->$action();
+    if ($action == 'recipie') {
+      $payload = $params[1];
+      $object->$action(intval($payload));
+    } else {
+      $object->$action();
+    }
   }
 }

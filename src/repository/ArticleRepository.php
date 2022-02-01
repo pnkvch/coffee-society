@@ -8,7 +8,7 @@ class ArticleRepository extends Repository
   public function getRecipies(): array {
     $result = [];
     $stmt = $this->database->connect()->prepare('
-        SELECT id, title, subtitle, content FROM public.recipies natural join public.content_recipies
+        SELECT id, title FROM public.recipies natural join public.content_recipies
     ');
 
     $stmt->execute();
@@ -20,8 +20,6 @@ class ArticleRepository extends Repository
         $result[] = new Article (
             $article['id'],
             $article['title'],
-            $article['subtitle'],
-            $article['content'],
         );
     }
 
@@ -51,5 +49,23 @@ class ArticleRepository extends Repository
     }
 
     return $result;
+  }
+
+  public function getRecipie(int $id): ?Article {
+    $stmt = $this->database->connect()->prepare('
+        SELECT id, title, subtitle, content FROM public.recipies natural join public.content_recipies where id = :id
+    ');
+
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+
+    $article = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    return new Article(
+      $article['id'],
+      $article['title'],
+      $article['subtitle'],
+      $article['content'],
+    );
   }
 }

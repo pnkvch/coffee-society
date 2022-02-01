@@ -4,7 +4,7 @@
   }?>
   <aside class="sidebar">
     <div class="upper-sidebar">
-      <img class="logo-sidebar" src="public/images/logo.svg" />
+      <img class="logo-sidebar" src="/public/images/logo.svg" />
       <div class="links">
         <a href="/feed">Feed</a>
         <a href="/recipies">Coffee Recipies</a>

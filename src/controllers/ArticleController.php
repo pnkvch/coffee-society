@@ -20,4 +20,9 @@ class ArticleController extends AppController {
     $recipies = $this->articleRepository->getRecipies();
     $this->render('recipies', ['recipies' => $recipies]);
   }
+
+  public function recipie(int $recipieId) {
+    $recipie = $this->articleRepository->getRecipie($recipieId);
+    $this->render('recipie', ['recipie' => $recipie]);
+  }
 }

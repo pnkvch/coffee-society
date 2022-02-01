@@ -9,7 +9,7 @@ class Article
     private $likes;
     private $dislikes;
 
-    public function __construct(int $id, string $title, string $subtitle, string $content, int $likes = 0, int $dislikes = 0) {
+    public function __construct(int $id, string $title, string $subtitle = '', string $content = '', int $likes = 0, int $dislikes = 0) {
         $this->id = $id;
         $this->title = $title;
         $this->subtitle = $subtitle;
