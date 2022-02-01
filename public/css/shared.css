@@ -50,11 +50,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 30px;
-  background-image: linear-gradient(rgb(var(--primary-black), var(--alpha)), rgba(var(--primary-black), var(--alpha))), url(../images/coffee-image.png);
+  background-image: linear-gradient(rgb(var(--primary-black), var(--alpha)), rgba(var(--primary-black), var(--alpha)));
   background-size: cover;
   background-position: center;
   color: var(--secondary-text-color);
-  transition: 0.2s linear;
 }
 
 .card h5 {
