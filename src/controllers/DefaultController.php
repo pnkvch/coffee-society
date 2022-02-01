@@ -13,19 +13,9 @@ class DefaultController extends AppController {
         }
     }
 
-    public function login()
-    {
-        $this->render('login');
-    }
-
     public function feed()
     {
         $this->render('feed');
-    }
-
-    public function recipies()
-    {
-        $this->render('recipies');
     }
 
     public function explore()

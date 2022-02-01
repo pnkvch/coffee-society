@@ -9,50 +9,23 @@
   <?php $this->render('sidebar');?>
   <section class="page-container">
     <div class="cards-wrapper">
-      <div class="card">
-        <div class="upper-section">
-          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sint.</h5>
-        </div>
-        <div class="social-interaction">
-          <div class="counters">
-            <img src="public/images/heart.svg" />
-            <span>609</span>
-            <img src="public/images/comment.svg" />
-            <span>120</span>
+      <?php foreach ($recipies as $recipie): ?>
+        <div class="card">
+          <div class="upper-section">
+            <h5><?= $recipie->getTitle(); ?></h5>
           </div>
-          <span>SHARE</span>
+          <div class="social-interaction">
+            <div class="counters">
+              <img src="public/images/clock.svg" />
+              <span>1h ago</span>
+            </div>
+            <div class="social-interaction">
+              <span>SHARE</span>
+              <img src="public/images/arrow.svg" />
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="upper-section">
-          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sint.</h5>
-        </div>
-        <div class="lower-section">
-          <span>609</span>
-          <span>120</span>
-          <span>SHARE</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="upper-section">
-          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sint.</h5>
-        </div>
-        <div class="lower-section">
-          <span>609</span>
-          <span>120</span>
-          <span>SHARE</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="upper-section">
-          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sint.</h5>
-        </div>
-        <div class="lower-section">
-          <span>609</span>
-          <span>120</span>
-          <span>SHARE</span>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </section>
   </div>
