@@ -68,4 +68,22 @@ class ArticleRepository extends Repository
       $article['content'],
     );
   }
+
+  public function getArticle(int $id): ?Article {
+    $stmt = $this->database->connect()->prepare('
+        SELECT id, title, subtitle, content FROM public.articles natural join public.content_articles where id = :id
+    ');
+
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+
+    $article = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    return new Article(
+      $article['id'],
+      $article['title'],
+      $article['subtitle'],
+      $article['content'],
+    );
+  }
 }

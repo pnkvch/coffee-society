@@ -31,6 +31,10 @@ class Router {
     if ($action == 'recipie') {
       $payload = $params[1];
       $object->$action(intval($payload));
+    } else if ($action == 'feed' && $params[1]){
+      $payload = $params[1];
+      $action = 'article';
+      $object->$action($params[1]);
     } else {
       $object->$action();
     }

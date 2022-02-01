@@ -11,7 +11,8 @@
   <section class="page-container">
     <div class="cards-wrapper">
       <?php foreach ($articles as $article): ?>
-        <div class="card">
+        <a href="/feed/<?= $article->getId();?>">
+        <div  class="card">
           <div class="upper-section">
             <h5><?= $article->getTitle(); ?></h5>
             <span><?= $article->getSubtitle(); ?></span>
@@ -26,6 +27,7 @@
             <span>SHARE</span>
           </div>
         </div>
+        </a>
       <?php endforeach; ?>
     </div>
   </section>
