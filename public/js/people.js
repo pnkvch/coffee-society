@@ -1,4 +1,4 @@
-const CLIENT_ID = 'yjqyDG5bKNFC2gDh_dQc4RQZcl10SDMKGAA8hSHC08w'
+const CLIENT_ID = ''
 
 const cards = document.querySelectorAll('.card');
 

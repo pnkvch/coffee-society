@@ -12,6 +12,7 @@ Router::get('recipies', 'ArticleController');
 Router::get('people', 'UserController');
 Router::get('recipie', 'ArticleController');
 Router::get('logout', 'SecurityController');
+Router::get('explore', 'DefaultController');
 Router::post('login', 'SecurityController');
 Router::post('register', 'SecurityController');
 
